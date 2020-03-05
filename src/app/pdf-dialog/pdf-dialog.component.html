@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>PDF Viewer</h1>
+<div mat-dialog-content>
+  <ngx-extended-pdf-viewer 
+    [src]="'assets/themes_de_la_Science-fiction.pdf'" 
+    [textLayer]="true"
+    useBrowserLocale="true"
+    [ignoreResponsiveCSS]="false"
+    height="95vh">
+  </ngx-extended-pdf-viewer>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</div>
